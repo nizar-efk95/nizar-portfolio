@@ -249,7 +249,9 @@ function App() {
             <p>
               I was born in Italy and moved to France when I was 12, where I finished my studies and started working 
               in IT support and web design. Later, I chose to move to Taiwan, complete an international MBA and 
-              specialize in EdTech projects, from LMS integration to multilingual localization for global teams. 
+              specialize in EdTech projects, from LMS integration to multilingual localization for global teams.
+            </p>
+            <p>
               Outside of work I love being outdoors and playing football; having played at a high level when I was younger, 
               I bring the same team spirit and discipline into every project.
             </p>
