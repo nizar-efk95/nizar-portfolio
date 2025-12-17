@@ -257,13 +257,8 @@ function App() {
               specialize in EdTech projects, from LMS integration to multilingual localization for global teams.
             </p>
             <p>
-              People who work with me describe me as calm, reliable and clear in my communication, especially when 
-              coordinating across regions and time zones. Outside of work I love being outdoors and playing football; 
-              having played at a high level when I was younger, I bring the same team spirit and discipline into every project.
-            </p>
-            <p className="font-medium text-gray-900">
-              Based in Taipei, Taiwan | Available for opportunities in EdTech, AI enablement, localization, 
-              and digital transformation.
+              Outside of work I love being outdoors and playing football; having played at a high level when I was younger, 
+              I bring the same team spirit and discipline into every project.
             </p>
           </div>
         </div>
@@ -465,7 +460,7 @@ function App() {
               and digital transformation. Feel free to reach out for collaborations, consulting, 
               or speaking opportunities.
             </p>
-            <div className="flex flex-col gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
               <a 
                 href="mailto:nizarelfyek95pro@gmail.com"
                 className="px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:scale-95 transition shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg font-medium break-all"
