@@ -247,12 +247,19 @@ function App() {
           <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
             <p>
               I help companies deploy LMS platforms, localize content in French and Italian, and run digital 
-              campaigns that support sales, onboarding, and customer education.
+              campaigns that support sales, onboarding, and customer education. With a strong background in EdTech, 
+              localization, and digital transformation, I've successfully led projects across 8+ regions, 
+              implemented AI-driven solutions, and delivered measurable improvements in user adoption and customer satisfaction.
             </p>
             <p>
-              With a strong background in EdTech, localization, and digital transformation, I've successfully 
-              led projects across 8+ regions, implemented AI-driven solutions, and delivered measurable improvements 
-              in user adoption and customer satisfaction.
+              I was born in Italy and moved to France when I was 12, where I finished my studies and started working 
+              in IT support and web design. Later I chose to move to Taiwan, complete an international MBA and 
+              specialize in EdTech projects, from LMS integration to multilingual localization for global teams.
+            </p>
+            <p>
+              People who work with me describe me as calm, reliable and clear in my communication, especially when 
+              coordinating across regions and time zones. Outside of work I love being outdoors and playing football; 
+              having played at a high level when I was younger, I bring the same team spirit and discipline into every project.
             </p>
             <p className="font-medium text-gray-900">
               Based in Taipei, Taiwan | Available for opportunities in EdTech, AI enablement, localization, 
