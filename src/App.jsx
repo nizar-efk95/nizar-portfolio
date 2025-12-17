@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
+  const [expandedProject, setExpandedProject] = useState(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,50 +12,81 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const experiences = [
+  const projects = [
     {
-      title: "EdTech Project Manager (AI & Localization)",
-      company: "ViewSonic",
-      period: "Sep 2022 - Present",
-      location: "Taipei, Taiwan",
-      highlights: [
-        "Deployed LearnWorlds LMS across 8+ regions",
-        "Built centralized Product Intelligence Hub",
-        "Implemented AI tools for course creation",
-        "Localized 300+ assets reducing support requests by 40%"
+      id: 1,
+      title: "LMS Integration",
+      teaser: "Global LearnWorlds deployment across 8+ regions",
+      icon: "🎓",
+      company: "ViewSonic, Taipei, Taiwan",
+      date: "2022 - Ongoing",
+      challenges: "Fragmented training platforms across regions, low customer retention, manual course creation processes",
+      tasks: [
+        "Integrated LearnWorlds LMS with SSO/Azure AD across 8+ regions",
+        "Built unified Product Hub for sales/marketing/training assets",
+        "Implemented AI tools for automated course creation and data analytics"
+      ],
+      results: [
+        "Boosted customer retention through streamlined sales training",
+        "Enabled data-driven decisions for regional teams",
+        "Accelerated business opportunities via centralized learning platform"
       ]
     },
     {
-      title: "Blockchain Marketing Strategist",
-      company: "Lootex",
-      period: "Oct 2021 - Aug 2022",
-      location: "Taipei, Taiwan",
-      highlights: [
-        "Market research across France, Italy, and Spain",
-        "Integrated Freshdesk CRM and chatbot",
-        "Delivered localized onboarding materials"
+      id: 2,
+      title: "Asset Localization FR + IT",
+      teaser: "300+ UI/content assets translated for global sales",
+      icon: "🌍",
+      company: "ViewSonic, Taipei, Taiwan",
+      date: "2022 - Ongoing",
+      challenges: "Language barriers blocking FR/IT market penetration, high support volume from untranslated materials",
+      tasks: [
+        "Localized 300+ assets (UI elements, articles, email campaigns) in French/Italian",
+        "Adapted training materials and marketing content for regional compliance",
+        "Collaborated with sales teams for culturally relevant translations"
+      ],
+      results: [
+        "Reduced support requests by enabling self-service in native languages",
+        "Increased engagement across European markets",
+        "Supported cross-regional go-to-market initiatives"
       ]
     },
     {
-      title: "Digital Marketing Intern",
-      company: "BenQ",
-      period: "Jan 2021 - Sep 2021",
-      location: "Taipei, Taiwan",
-      highlights: [
-        "Managed French social media accounts",
-        "Led KOL partnerships for European markets",
-        "Localized marketing content"
+      id: 3,
+      title: "Product Hub Development",
+      teaser: "Global sales/marketing asset centralization",
+      icon: "📊",
+      company: "ViewSonic, Taipei, Taiwan",
+      date: "2022 - Ongoing",
+      challenges: "Scattered product intelligence across regions, manual asset retrieval slowing sales cycles",
+      tasks: [
+        "Built unified Product Hub for global sales/marketing/training resources",
+        "Integrated with LearnWorlds LMS and regional systems",
+        "Implemented access controls and search functionality"
+      ],
+      results: [
+        "Accelerated sales enablement across 8+ regions",
+        "Reduced asset search time by 70%",
+        "Enabled consistent go-to-market messaging globally"
       ]
     },
     {
-      title: "IT Systems & Networks Executive",
-      company: "Monaco Digital",
-      period: "Jun 2018 - Aug 2019",
-      location: "Monaco",
-      highlights: [
-        "Supported enterprise clients (SBM Offshore, Monaco Govt)",
-        "System support (Azure AD, Exchange, Lotus Notes)",
-        "OS/software integrations and training"
+      id: 4,
+      title: "Freshdesk CRM Integration",
+      teaser: "Chatbot setup + workflow optimization",
+      icon: "💬",
+      company: "Lootex, Taipei, Taiwan",
+      date: "2021",
+      challenges: "Inefficient support workflows, fragmented client data, poor chatbot response times",
+      tasks: [
+        "Led Freshdesk CRM integration with existing systems",
+        "Configured AI chatbots for automated client onboarding",
+        "Created SOPs for support team workflow optimization"
+      ],
+      results: [
+        "Streamlined client engagement and reduced response times",
+        "Improved support efficiency across marketing teams",
+        "Enhanced data tracking for blockchain/NFT campaigns"
       ]
     }
   ]
@@ -110,7 +142,7 @@ function App() {
             <div className="text-xl font-bold text-gradient">Nizar El Fyek</div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition">About</a>
-              <a href="#experience" className="text-gray-700 hover:text-blue-600 transition">Experience</a>
+              <a href="#projects" className="text-gray-700 hover:text-blue-600 transition">Projects</a>
               <a href="#skills" className="text-gray-700 hover:text-blue-600 transition">Skills</a>
               <a href="#education" className="text-gray-700 hover:text-blue-600 transition">Education</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 transition">Contact</a>
@@ -193,33 +225,132 @@ function App() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      {/* Projects Section */}
+      <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            <span className="text-gradient">Experience</span>
+          <h2 className="text-4xl font-bold text-center mb-4">
+            <span className="text-gradient">Featured Projects</span>
           </h2>
-          <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
-                <div className="flex flex-wrap justify-between items-start mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900">{exp.title}</h3>
-                    <p className="text-xl text-blue-600 font-medium">{exp.company}</p>
+          <p className="text-center text-gray-600 mb-12 text-lg">
+            Click on any project card to explore details
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {projects.map((project) => (
+              <div 
+                key={project.id}
+                className={`relative bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer ${
+                  expandedProject === project.id 
+                    ? 'md:col-span-2 scale-[1.02]' 
+                    : 'hover:shadow-xl hover:scale-[1.02]'
+                }`}
+                onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+              >
+                {/* Teaser Card */}
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="text-5xl">{project.icon}</div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">{project.title}</h3>
+                        <p className="text-gray-600 mt-1">{project.teaser}</p>
+                      </div>
+                    </div>
+                    <button 
+                      className={`flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center transition-transform duration-300 ${
+                        expandedProject === project.id ? 'rotate-180' : ''
+                      }`}
+                    >
+                      <svg 
+                        className="w-6 h-6 text-blue-600" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
                   </div>
-                  <div className="text-right text-gray-600">
-                    <p className="font-medium">{exp.period}</p>
-                    <p className="text-sm">{exp.location}</p>
+                  
+                  {/* Expanded Details */}
+                  <div className={`transition-all duration-500 overflow-hidden ${
+                    expandedProject === project.id 
+                      ? 'max-h-[2000px] opacity-100 mt-6' 
+                      : 'max-h-0 opacity-0'
+                  }`}>
+                    <div className="border-t pt-6 space-y-6">
+                      {/* Company & Date */}
+                      <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4">
+                        <div className="flex flex-wrap justify-between items-center">
+                          <div>
+                            <p className="text-sm text-gray-600 font-medium">Company</p>
+                            <p className="text-lg font-bold text-gray-900">{project.company}</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-sm text-gray-600 font-medium">Timeline</p>
+                            <p className="text-lg font-bold text-blue-600">{project.date}</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Challenges */}
+                      <div>
+                        <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center">
+                          <span className="text-2xl mr-2">🎯</span>
+                          Challenges
+                        </h4>
+                        <p className="text-gray-700 leading-relaxed bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+                          {project.challenges}
+                        </p>
+                      </div>
+
+                      {/* Tasks */}
+                      <div>
+                        <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center">
+                          <span className="text-2xl mr-2">⚙️</span>
+                          Key Tasks
+                        </h4>
+                        <ul className="space-y-3">
+                          {project.tasks.map((task, idx) => (
+                            <li key={idx} className="flex items-start bg-blue-50 p-4 rounded-lg">
+                              <span className="text-blue-600 font-bold mr-3 flex-shrink-0">•</span>
+                              <span className="text-gray-700">{task}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Results */}
+                      <div>
+                        <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center">
+                          <span className="text-2xl mr-2">✨</span>
+                          Results & Impact
+                        </h4>
+                        <ul className="space-y-3">
+                          {project.results.map((result, idx) => (
+                            <li key={idx} className="flex items-start bg-green-50 p-4 rounded-lg">
+                              <span className="text-green-600 font-bold mr-3 flex-shrink-0">✓</span>
+                              <span className="text-gray-700 font-medium">{result}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <ul className="space-y-2">
-                  {exp.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-blue-600 mr-2">▹</span>
-                      <span className="text-gray-700">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
+
+                {/* Gradient Border Effect */}
+                <div className={`absolute inset-0 rounded-2xl pointer-events-none transition-opacity duration-300 ${
+                  expandedProject === project.id 
+                    ? 'opacity-100' 
+                    : 'opacity-0'
+                }`} style={{
+                  background: 'linear-gradient(to right, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1))',
+                  padding: '2px',
+                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  WebkitMaskComposite: 'xor',
+                  maskComposite: 'exclude'
+                }}></div>
               </div>
             ))}
           </div>
