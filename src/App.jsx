@@ -203,9 +203,10 @@ function App() {
                 AI & Localization Specialist
               </p>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                Multilingual Project Manager with experience leading cross-functional initiatives across EdTech, 
-                localization, and AI-driven solutions. Specialized in driving user adoption, building scalable 
-                documentation systems, and delivering measurable results in international environments.
+                I help companies deploy LMS and CRM platforms, localize assets in French and Italian, and run digital 
+                campaigns that support sales, onboarding, and customer education. With a strong background in EdTech, 
+                localization, and digital transformation, I've successfully led projects across 8+ regions, 
+                implemented AI-driven solutions, and delivered measurable improvements in user adoption and customer satisfaction.
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center md:justify-start">
                 <a 
@@ -245,12 +246,6 @@ function App() {
             <span className="text-gradient">About Me</span>
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
-            <p>
-              I help companies deploy LMS and CRM platforms, localize assets in French and Italian, and run digital 
-              campaigns that support sales, onboarding, and customer education. With a strong background in EdTech, 
-              localization, and digital transformation, I've successfully led projects across 8+ regions, 
-              implemented AI-driven solutions, and delivered measurable improvements in user adoption and customer satisfaction.
-            </p>
             <p>
               I was born in Italy and moved to France when I was 12, where I finished my studies and started working 
               in IT support and web design. Later, I chose to move to Taiwan, complete an international MBA and 
