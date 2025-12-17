@@ -20,21 +20,24 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "LMS Integration",
-      teaser: "Global LearnWorlds deployment across 8+ regions",
+      title: "LMS Platform Integration",
+      teaser: "Global LearnWorlds deployment across 15+ countries",
       icon: "🎓",
       company: "ViewSonic, Taipei, Taiwan",
-      date: "2022 - Ongoing",
+      date: "2024 - Ongoing",
       challenges: "Fragmented training platforms across regions, low customer retention, manual course creation processes",
       tasks: [
-        "Integrated LearnWorlds LMS with SSO/Azure AD across 8+ regions",
-        "Built unified Product Hub for sales/marketing/training assets",
-        "Implemented AI tools for automated course creation and data analytics"
+        "Market research for Professional Programs and Alignements with Trainers and 8+ Region's stakeholders"
+        "Negotiations with LearnWorlds vendor and design of the platform (Pages, content, UX/UI)"
+        "Integration with SSO/Azure AD connexion from ViewSonic native account",
+        "Internal and external promotion of the platform via marketing channels and internal communication",
+        "Feedback collection and improvement of the User Experience"
       ],
       results: [
         "Boosted customer retention through streamlined sales training",
         "Enabled data-driven decisions for regional teams",
         "Accelerated business opportunities via centralized learning platform"
+        "Enabled automations and scalability opportunities that were impossible with the previous platform"
       ]
     },
     {
