@@ -27,12 +27,12 @@ function App() {
       date: "2024 - Ongoing",
       challenges: "Fragmented training platforms across regions, low customer retention, manual course creation processes",
       tasks: [
-        "Market research for Professional Programs and Alignements with Trainers and 8+ Region's stakeholders"
-        "Negotiations with LearnWorlds vendor and design of the platform (Pages, content, UX/UI)"
-        "Integration with SSO/Azure AD connexion from ViewSonic native account",
-        "Internal and external promotion of the platform via marketing channels and internal communication",
-        "Feedback collection and improvement of the User Experience"
-      ],
+  "Market research for Professional Programs and Alignements with Trainers and 8+ Region's stakeholders",
+  "Negotiations with LearnWorlds vendor and design of the platform (Pages, content, UX/UI)",
+  "Integration with SSO/Azure AD connexion from ViewSonic native account",
+  "Internal and external promotion of the platform via marketing channels and internal communication",
+  "Feedback collection and improvement of the User Experience"
+],
       results: [
         "Boosted customer retention through streamlined sales training",
         "Enabled data-driven decisions for regional teams",
