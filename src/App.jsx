@@ -133,7 +133,7 @@ function App() {
     },
     {
       degree: "BTEC HND – IT Systems & Network Administration",
-      school: "Nice, France",
+      school: "Lycée Beau Site",
       period: "2015 - 2017",
       location: "Nice, France"
     }
@@ -200,15 +200,15 @@ function App() {
                 <span className="text-gradient">Nizar El Fyek</span>
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium">
-                EdTech Project Manager
+                Multilingual EdTech & AI Solutions Manager
               </h2>
               <p className="text-lg sm:text-xl text-gray-600">
-                AI & Localization Specialist
+                Digital Learning, SaaS, and AI Adoption for Education and other industries
               </p>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                 I help companies deploy LMS and CRM platforms, localize assets in French and Italian, and run digital 
                 campaigns that support sales, onboarding, and customer education. With a strong background in EdTech, 
-                localization, and digital transformation, I've successfully led projects across 8+ regions, 
+                localization, and digital transformation, I've successfully led international projects, 
                 implemented AI-driven solutions, and delivered measurable improvements in user adoption and customer satisfaction.
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center md:justify-start">
@@ -489,7 +489,7 @@ function App() {
       {/* Footer */}
       <footer className="py-6 sm:py-8 bg-gray-900 text-white text-center">
         <p className="text-sm sm:text-base text-gray-400 px-4">
-          © 2024 Nizar El Fyek. All rights reserved.
+          © 2025 Nizar El Fyek. All rights reserved.
         </p>
       </footer>
     </div>
