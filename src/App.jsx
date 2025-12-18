@@ -36,7 +36,7 @@ function App() {
       results: [
         "Boosted customer retention through streamlined sales training",
         "Enabled data-driven decisions for regional teams",
-        "Accelerated business opportunities via centralized learning platform"
+        "Accelerated business opportunities via centralized learning platform",
         "Enabled automations and scalability opportunities that were impossible with the previous platform"
       ]
     },
