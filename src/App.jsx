@@ -99,24 +99,54 @@ function App() {
     }
   ]
 
-  const skills = [
-    {
-      category: "Project Management",
-      items: ["SOP Design", "Stakeholder Coordination", "Go-to-Market Delivery", "Cross-functional Leadership"]
-    },
-    {
-      category: "Localization & Languages",
-      items: ["French (Native)", "Italian (Native)", "English (Fluent)", "Mandarin (Basic)", "UI/UX Localization"]
-    },
-    {
-      category: "AI & Digital Tools",
-      items: ["AI-assisted Course Creation", "Data-driven Content", "Automation Workflows"]
-    },
-    {
-      category: "Platforms & Tools",
-      items: ["LearnWorlds LMS", "Freshdesk", "HubSpot", "Azure AD", "WordPress", "HTML/CSS"]
-    }
-  ]
+ const skills = [
+  {
+    category: "Project Management",
+    items: [
+      "SOP Design",
+      "Stakeholder Coordination",
+      "Go-to-Market Delivery",
+      "Cross-functional Leadership",
+      "Market Research",
+      "Vendor Negotiation"
+    ]
+  },
+  {
+    category: "Localization & Languages",
+    items: [
+      "🇫🇷 French - Level: Native",
+      "🇮🇹 Italian - Level: Native",
+      "🇬🇧 English - Level: Native",
+      "中文 Mandarin - Level: Basic",
+      "UI/UX Localization",
+      "Technical Documentation Localization",
+      "Sales & Marketing Material Localization"
+    ]
+  },
+  {
+    category: "AI & Digital Tools",
+    items: [
+      "AI-assisted Course Creation",
+      "ChatGPT AI Agent Creation",
+      "Perplexity AI Agent Creation",
+      "Automation Workflows",
+      "Data-driven Content"
+    ]
+  },
+  {
+    category: "Platforms & Tools",
+    items: [
+      "LearnWorlds LMS",
+      "Freshdesk",
+      "HubSpot",
+      "Azure AD",
+      "GitHub",
+      "WordPress",
+      "HTML/CSS"
+    ]
+  }
+]
+
 
   const education = [
     {
