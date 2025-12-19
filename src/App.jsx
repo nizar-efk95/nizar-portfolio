@@ -232,7 +232,7 @@ function App() {
               <div className="relative w-full max-w-sm md:max-w-md">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
                 <img 
-                  src="/nizar-portfolio/nizar.jpg" 
+                  src="/nizar-portfolio/508842.jpg" 
                   alt="Nizar El Fyek" 
                   className="relative rounded-2xl shadow-2xl w-full object-cover"
                 />
