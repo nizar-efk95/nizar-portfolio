@@ -242,35 +242,47 @@ function App() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-12 sm:py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
-            <span className="text-gradient">About Me</span>
-          </h2>
-          <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
-            <p>
-              I was born in Italy and moved to France when I was 12, where I finished my studies and started working 
-              in IT support and web design. Later, I chose to move to Taiwan, complete an international MBA and 
-              specialize in EdTech projects, from LMS integration to multilingual localization for global teams.
-            </p>
-            <p>
-              Outside of work I love being outdoors and playing football; having played at a high level when I was younger, 
-              I bring the same team spirit and discipline into every project.
-            </p>
-          </div>
+     {/* About Section */}
+<section id="about" className="py-12 sm:py-16 md:py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
+      <span className="text-gradient">About Me</span>
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      {/* Text */}
+      <div className="space-y-4 sm:space-y-6 text-center md:text-left text-base sm:text-lg text-gray-700 leading-relaxed">
+        <p>
+          I was born in Italy and moved to France when I was 12, where I finished my studies
+          and started working in IT support and web design. Later, I moved to Taiwan to complete
+          an International MBA and specialize in EdTech projects.
+        </p>
+        <p>
+          I focus on LMS integrations, multilingual localization, and digital transformation
+          initiatives for global teams, bridging business, technology, and education.
+        </p>
+        <p>
+          Outside of work, I’m passionate about football and outdoor activities. Having played
+          at a high level, I bring the same discipline, teamwork, and execution mindset into
+          every project I manage.
+        </p>
+      </div>
+
+      {/* Image */}
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-sm md:max-w-md">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
+          <img
+            src="/nizar-portfolio/nizar.jpg"
+            alt="Nizar El Fyek"
+            className="relative rounded-2xl shadow-2xl w-full object-cover"
+          />
         </div>
-        <div className="flex justify-center order-first md:order-last">
-              <div className="relative w-full max-w-sm md:max-w-md">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
-                <img 
-                  src="/nizar-portfolio/nizar.jpg" 
-                  alt="Nizar El Fyek" 
-                  className="relative rounded-2xl shadow-2xl w-full object-cover"
-                />
-              </div>
-            </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       <section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
