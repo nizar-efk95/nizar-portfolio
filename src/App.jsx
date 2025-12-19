@@ -65,7 +65,7 @@ function App() {
       teaser: "Global sales/marketing asset centralization",
       icon: "📊",
       company: "ViewSonic, Taipei, Taiwan",
-      date: "2022 - Ongoing",
+      date: "2024",
       challenges: "Scattered product intelligence across regions, manual asset retrieval slowing sales cycles",
       tasks: [
         "Built unified Product Hub for global sales/marketing/training resources",
@@ -73,7 +73,7 @@ function App() {
         "Implemented access controls and search functionality"
       ],
       results: [
-        "Accelerated sales enablement across 8+ regions",
+        "Accelerated sales enablement across 15+ countries",
         "Reduced asset search time by 70%",
         "Enabled consistent go-to-market messaging globally"
       ]
@@ -114,10 +114,10 @@ function App() {
   {
     category: "Localization & Languages",
     items: [
-      "🇫🇷 French - Level: Native",
-      "🇮🇹 Italian - Level: Native",
-      "🇬🇧 English - Level: Native",
-      "中文 Mandarin - Level: Basic",
+      "French - Level: Native",
+      "Italian - Level: Native",
+      "English - Level: Native",
+      "Mandarin - Level: Basic",
       "UI/UX Localization",
       "Technical Documentation Localization",
       "Sales & Marketing Material Localization"
@@ -162,7 +162,7 @@ function App() {
       location: "Nice, France"
     },
     {
-      degree: "BTEC HND – IT Systems & Network Administration",
+      degree: "Diploma of Advanced Technician (BTS) – IT Systems & Network Administration",
       school: "Lycée Beau Site",
       period: "2015 - 2017",
       location: "Nice, France"
