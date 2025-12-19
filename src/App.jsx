@@ -42,14 +42,14 @@ function App() {
     },
     {
       id: 2,
-      title: "Asset Localization FR + IT",
+      title: "Asset Localization in French and Italian",
       teaser: "300+ UI/content assets translated for global sales",
       icon: "🌍",
       company: "ViewSonic, Taipei, Taiwan",
       date: "2022 - Ongoing",
-      challenges: "Language barriers blocking FR/IT market penetration, high support volume from untranslated materials",
+      challenges: "Language barriers blocking French and Italian markets penetration, high support volume from untranslated materials",
       tasks: [
-        "Localized 300+ assets (UI elements, articles, email campaigns) in French/Italian",
+        "Localized 300+ assets (UI elements, articles, email campaigns) in French and Italian",
         "Adapted training materials and marketing content for regional compliance",
         "Collaborated with sales teams for culturally relevant translations"
       ],
