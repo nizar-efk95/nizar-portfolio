@@ -362,13 +362,14 @@ const projectCategories = [
         {/* Projects Grid - COMPLETE CARD LOGIC */}
         <div className="grid md:grid-cols-2 gap-6 px-4">
           {category.projects.map((project) => (
-            <div 
-              key={project.id}
-              className={`relative bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-xl md:hover:scale-[1.02] active:scale-95 ${
-                expandedProject === project.id ? 'md:col-span-2' : ''
-              }`}
-              onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
-            >
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 px-4">
+  {category.projects.map((project) => (
+    <div 
+      key={project.id}
+      className={`relative bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-xl md:hover:scale-[1.02] active:scale-95`}
+      // REMOVED: md:col-span-2 - keeps 2 columns always
+      onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+    >
               <div className="p-5 sm:p-6 md:p-8">
                 <div className="flex items-start justify-between mb-3 sm:mb-4">
                   <div className="flex items-start sm:items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
@@ -449,7 +450,6 @@ const projectCategories = [
             </div>
           ))}
         </div>
-      </div>
     ))}
   </div>
 </section>
