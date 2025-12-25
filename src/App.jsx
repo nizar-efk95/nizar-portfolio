@@ -340,7 +340,7 @@ const projectCategories = [
 </section>
 
 
-      {/* NEW Projects Section */}
+{/* ✅ COMPLETE Projects Section - COPY PASTE THIS */}
 <section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
@@ -359,12 +359,93 @@ const projectCategories = [
           </h3>
         </div>
         
-        {/* Projects Grid */}
+        {/* Projects Grid - COMPLETE CARD LOGIC */}
         <div className="grid md:grid-cols-2 gap-6 px-4">
           {category.projects.map((project) => (
-            // YOUR EXISTING PROJECT CARD JSX HERE - no changes needed
-            <div key={project.id} /* your existing card code */ >
-              {/* Keep all your existing expandable card logic */}
+            <div 
+              key={project.id}
+              className={`relative bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-xl md:hover:scale-[1.02] active:scale-95 ${
+                expandedProject === project.id ? 'md:col-span-2' : ''
+              }`}
+              onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+            >
+              <div className="p-5 sm:p-6 md:p-8">
+                <div className="flex items-start justify-between mb-3 sm:mb-4">
+                  <div className="flex items-start sm:items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
+                    <div className="text-3xl sm:text-4xl md:text-5xl flex-shrink-0">{project.icon}</div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">{project.title}</h3>
+                      <p className="text-sm sm:text-base text-gray-600 mt-1 break-words">{project.teaser}</p>
+                    </div>
+                  </div>
+                  <button className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 ml-2 rounded-full bg-blue-100 flex items-center justify-center transition-transform duration-300 ${
+                    expandedProject === project.id ? 'rotate-180' : ''
+                  }`}>
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                
+                {/* Expanded Details */}
+                <div className={`transition-all duration-500 overflow-hidden ${
+                  expandedProject === project.id 
+                    ? 'max-h-[2000px] opacity-100 mt-4 sm:mt-6' 
+                    : 'max-h-0 opacity-0'
+                }`}>
+                  <div className="border-t pt-4 sm:pt-6 space-y-4 sm:space-y-6">
+                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+                        <div>
+                          <p className="text-xs sm:text-sm text-gray-600 font-medium">Company</p>
+                          <p className="text-sm sm:text-base md:text-lg font-bold text-gray-900 break-words">{project.company}</p>
+                        </div>
+                        <div className="sm:text-right">
+                          <p className="text-xs sm:text-sm text-gray-600 font-medium">Timeline</p>
+                          <p className="text-sm sm:text-base md:text-lg font-bold text-blue-600">{project.date}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+                        <span className="text-xl sm:text-2xl mr-2">🎯</span> Challenges
+                      </h4>
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed bg-red-50 p-3 sm:p-4 rounded-lg border-l-4 border-red-400">
+                        {project.challenges}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+                        <span className="text-xl sm:text-2xl mr-2">⚙️</span> Key Tasks
+                      </h4>
+                      <ul className="space-y-2 sm:space-y-3">
+                        {project.tasks.map((task, idx) => (
+                          <li key={idx} className="flex items-start bg-blue-50 p-3 sm:p-4 rounded-lg">
+                            <span className="text-blue-600 font-bold mr-2 sm:mr-3 flex-shrink-0 text-lg">•</span>
+                            <span className="text-sm sm:text-base text-gray-700">{task}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+                        <span className="text-xl sm:text-2xl mr-2">✨</span> Results & Impact
+                      </h4>
+                      <ul className="space-y-2 sm:space-y-3">
+                        {project.results.map((result, idx) => (
+                          <li key={idx} className="flex items-start bg-green-50 p-3 sm:p-4 rounded-lg">
+                            <span className="text-green-600 font-bold mr-2 sm:mr-3 flex-shrink-0 text-lg">✓</span>
+                            <span className="text-sm sm:text-base text-gray-700 font-medium">{result}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -372,6 +453,7 @@ const projectCategories = [
     ))}
   </div>
 </section>
+
 
       {/* Skills Section */}
       <section id="skills" className="py-12 sm:py-16 md:py-20 bg-white">
