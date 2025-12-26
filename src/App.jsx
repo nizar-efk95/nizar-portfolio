@@ -182,53 +182,50 @@ function App() {
     }
   ]
 
-  const skills = [
-    {
-      category: "Project Management",
-      items: [
-        "SOP Design",
-        "Stakeholder Coordination",
-        "Go-to-Market Delivery",
-        "Cross-functional Leadership",
-        "Market Research",
-        "Vendor Negotiation"
-      ]
-    },
-    {
-      category: "Localization & Languages",
-      items: [
-        "French - Level: Native",
-        "Italian - Level: Native",
-        "English - Level: Native",
-        "Mandarin - Level: Basic",
-        "UI/UX Localization",
-        "Technical Documentation Localization",
-        "Sales & Marketing Material Localization"
-      ]
-    },
-    {
-      category: "AI & Digital Tools",
-      items: [
-        "AI-assisted Course Creation",
-        "ChatGPT AI Agent Creation",
-        "Perplexity AI Agent Creation",
-        "Automation Workflows",
-        "Data-driven Content"
-      ]
-    },
-    {
-      category: "Platforms & Tools",
-      items: [
-        "LearnWorlds LMS",
-        "Freshdesk",
-        "HubSpot",
-        "Azure AD",
-        "GitHub",
-        "WordPress",
-        "HTML/CSS"
-      ]
-    }
-  ]
+ const skills = [
+  {
+    category: "Key Certifications",
+    items: [
+      "Inbound Sales - HubSpot Academy (Oct 2025)",
+      "Key Account Management - LinkedIn Learning (May 2024)",
+      "Agile Foundations - LinkedIn Learning (Apr 2024)",
+      "Google Analytics - Google (Aug 2021)",
+      "Oracle EBS R12: Supply Chain Management - Oracle Academy (Jan 2021)",
+      "TOEIC 880/990 - English Proficiency"
+    ]
+  },
+  {
+    category: "Project Management",
+    items: [
+      "SOP Design", "Stakeholder Coordination",
+      "Go-to-Market Delivery", "Cross-functional Leadership",
+      "Vendor Negotiation", "Agile Methodologies"
+    ]
+  },
+  {
+    category: "Localization & Languages",
+    items: [
+      "French - Native", "Italian - Native",
+      "English - TOEIC 880/990", "Mandarin - Basic",
+      "UI/UX Localization", "Technical Documentation"
+    ]
+  },
+  {
+    category: "AI & Digital Tools",
+    items: [
+      "AI-assisted Course Creation", "ChatGPT AI Agent Creation",
+      "Perplexity AI Agent Creation", "Automation Workflows"
+    ]
+  },
+  {
+    category: "Platforms & Tools",
+    items: [
+      "LearnWorlds LMS", "Freshdesk CRM", "HubSpot",
+      "Azure AD", "Google Analytics", "WordPress"
+    ]
+  }
+]
+
 
   const education = [
     {
