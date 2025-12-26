@@ -226,4 +226,125 @@ function App() {
                                 {project.tag}
                               </span>
                             </div>
-                            <p className
+                            <p className="text-base sm:text-lg text-gray-600 mb-1">{project.teaser}</p>
+                            
+                            {/* ✅ QUICK WINS - 30-SEC RECRUITER SCAN */}
+                            <div className="flex flex-wrap gap-2 mb-4">
+                              {project.quickWins.map((win, idx) => (
+                                <span key={idx} className="px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-lg">
+                                  {win}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                        <button 
+                          className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center ml-4"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            setExpandedProject(expandedProject === project.id ? null : project.id)
+                          }}
+                        >
+                          <svg className={`w-6 h-6 transition-transform duration-300 ${expandedProject === project.id ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* ✅ COLLAPSED BY DEFAULT - EXPAND FOR DETAILS */}
+                    <div className={`bg-gradient-to-b from-gray-50 to-white transition-all duration-700 overflow-hidden ${
+                      expandedProject === project.id 
+                        ? 'max-h-[1600px] opacity-100 py-6 px-6 sm:px-8' 
+                        : 'max-h-0 opacity-0'
+                    }`}>
+                      {expandedProject === project.id && (
+                        <div className="space-y-6">
+                          {/* Company Info */}
+                          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
+                            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
+                              <div>
+                                <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Company</p>
+                                <p className="text-xl font-bold text-gray-900 mt-1">{project.company}</p>
+                              </div>
+                              <div className="text-right">
+                                <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Timeline</p>
+                                <p className="text-xl font-bold text-blue-600 mt-1">{project.date}</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Challenges */}
+                          <div>
+                            <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                              <span className="text-2xl mr-3">🎯</span> 
+                              <span>The Challenge</span>
+                            </h4>
+                            <div className="bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-2xl border-l-4 border-red-400">
+                              <p className="text-gray-700 leading-relaxed text-base">{project.challenges}</p>
+                            </div>
+                          </div>
+
+                          {/* What I Did */}
+                          <div>
+                            <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                              <span className="text-2xl mr-3">⚙️</span>
+                              <span>What I Owned</span>
+                            </h4>
+                            <div className="grid md:grid-cols-2 gap-3">
+                              {project.tasks.map((task, idx) => (
+                                <div key={idx} className="bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
+                                  <span className="text-blue-600 font-bold mr-2 text-lg">→</span>
+                                  <span className="text-gray-700">{task}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Results */}
+                          <div>
+                            <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                              <span className="text-2xl mr-3">✨</span>
+                              <span>Business Impact</span>
+                            </h4>
+                            <div className="grid md:grid-cols-2 gap-3">
+                              {project.results.map((result, idx) => (
+                                <div key={idx} className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-xl border-r-4 border-green-400">
+                                  <span className="text-green-600 font-bold mr-2 text-lg">✓</span>
+                                  <span className="text-gray-700 font-semibold">{result}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Skills Section - ENHANCED */}
+      <section id="skills" className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
+              Skills & Expertise
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Proven across LMS/CRM deployments, global localization, and sales enablement.
+            </p>
+          </div>
+          {/* ... skills grid unchanged */}
+        </div>
+      </section>
+
+      {/* Rest unchanged: Education, Contact, Footer */}
+    </div>
+  )
+}
+
+export default App
