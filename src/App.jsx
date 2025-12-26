@@ -19,211 +19,168 @@ setMobileMenuOpen(false)
 
 // ✅ SEO-OPTIMIZED CATEGORIES + ENHANCED PROJECTS
 const projectCategories = [
-  {
-    category: "LMS Implementation & EdTech Solutions",
-    icon: "🎓",
-    color: "from-blue-500 to-indigo-600",
-    tag: "Enterprise SaaS",
-    projects: [
-      {
-        id: 1,
-        title: "Global LearnWorlds LMS Deployment",
-        teaser: "+20 countries | SSO + Azure AD | 8 regions live",
-        company: "ViewSonic, Taipei",
-        date: "2024 - Present",
-        tag: "B2B EdTech",
-        quickWins: [
-          "+32% customer retention",
-          "75% faster content deployment",
-          "92% SSO adoption"
-        ],
-        challenges: "Regional sales teams used 12+ fragmented LMS platforms with no SSO, causing 40% training dropout rates, manual user provisioning delays, and zero analytics visibility across global markets.",
-        tasks: [
-          "Architected LearnWorlds SSO + Azure AD integration for 8 regions",
-          "Negotiated custom vendor roadmap with 3-month delivery vs 9-month standard",
-          "Built AI-powered course templates + auto-localization workflows (FR/IT/EN)",
-          "Designed sales onboarding certification paths with 90-day completion tracking",
-          "Launched cross-regional adoption campaigns hitting 85% trainer activation"
-        ],
-        results: [
-          "+32% customer retention (sales teams certified 2x faster)",
-          "75% reduction in regional content deployment time (3 days vs 12)",
-          "Pipeline acceleration through scalable training infrastructure",
-          "92% SSO adoption rate across +20 countries in 90 days"
-        ]
-      }
-    ]
-  },
-  {
-    category: "Global Localization & Market Expansion",
-    icon: "🌍",
-    color: "from-emerald-500 to-teal-600",
-    tag: "International Growth",
-    projects: [
-      {
-        id: 2,
-        title: "300+ Assets Localized (FR/IT/EN)",
-        teaser: "UI + Training + Marketing | Global market expansion",
-        company: "ViewSonic, Taipei",
-        date: "2022 - Present",
-        tag: "Localization",
-        quickWins: [
-          "-52% support tickets",
-          "+41% engagement rates",
-          "28% higher conversions"
-        ],
-        challenges: "French/Italian markets saw 65% lower conversion rates due to English-only UI, 200+ weekly support tickets for translation requests, and culturally mismatched sales materials blocking expansion.",
-        tasks: [
-          "Localized 300+ assets (UI strings, 45 training modules, 120 email campaigns, 35 sales decks)",
-          "Implemented cultural adaptation framework for compliance (GDPR, regional holidays)",
-          "Built automated translation QA pipeline reducing errors by 87%",
-          "Collaborated with 12 global sales reps on localization sprints",
-          "Created multilingual self-service knowledge base cutting support load"
-        ],
-        results: [
-          "-52% support tickets (self-service content adoption)",
-          "+41% engagement rates across French/Italian markets",
-          "28% higher conversion from localized sales materials",
-          "Enabled global pipeline growth through cross-regional alignment"
-        ]
-      }
-    ]
-  },
-  {
-    category: "Digital Asset Management Systems",
-    icon: "📊",
-    color: "from-purple-500 to-pink-600",
-    tag: "Sales Enablement",
-    projects: [
-      {
-        id: 3,
-        title: "Global Product Hub Development",
-        teaser: "Centralized intelligence | +20 countries | Sales acceleration",
-        company: "ViewSonic, Taipei",
-        date: "2024",
-        tag: "GTM Tools",
-        quickWins: [
-          "72% faster asset retrieval",
-          "22% less deal loss",
-          "95% adoption in 30 days"
-        ],
-        challenges: "Sales teams wasted 6+ hours/week hunting scattered assets across 17 platforms, inconsistent regional messaging caused 25% lost deals, no version control led to compliance risks.",
-        tasks: [
-          "Built unified Product Hub integrating LearnWorlds + 7 regional systems",
-          "Implemented faceted search + role-based access (sales vs marketing vs trainers)",
-          "Automated asset tagging + AI content recommendations",
-          "Migrated 2,500+ assets with 99.8% uptime during 4-week rollout",
-          "Created SOPs + training achieving 95% adoption in 30 days"
-        ],
-        results: [
-          "72% faster asset retrieval (2 min vs 45 min average)",
-          "Consistent messaging eliminated 22% deal loss from misalignment",
-          "Sales velocity increase through streamlined GTM assets",
-          "Scalable foundation now supports +20 countries"
-        ]
-      }
-    ]
-  },
-  {
-    category: "CRM Implementation & Customer Success",
-    icon: "💬",
-    color: "from-orange-500 to-red-600",
-    tag: "Customer Experience",
-    projects: [
-      {
-        id: 4,
-        title: "Freshdesk CRM + AI Chatbot",
-        teaser: "Blockchain/NFT campaigns | 50% faster responses",
-        company: "Lootex, Taipei",
-        date: "2021",
-        tag: "CRM Automation",
-        quickWins: [
-          "58% faster responses",
-          "68% AI resolution rate",
-          "+27% client retention"
-        ],
-        challenges: "Fragmented client data across 5 tools caused 72-hour response delays, NFT campaign support overwhelmed team (300+ tickets/week), no onboarding automation lost 35% early clients.",
-        tasks: [
-          "Led Freshdesk implementation + custom NFT workflow automations",
-          "Deployed multilingual AI chatbots (FR/EN) handling 68% of Tier 1 queries",
-          "Built client onboarding SOPs + automated drip campaigns",
-          "Integrated blockchain wallet verification + KYC workflows",
-          "Analyzed 12K tickets to prioritize high-impact automations"
-        ],
-        results: [
-          "58% faster response times (4h → 1.7h average)",
-          "AI handled 3,200 tickets/month (68% resolution rate)",
-          "+27% client retention through automated onboarding",
-          "Reduced churn across NFT campaigns"
-        ]
-      }
-    ]
-  },
-  {
-    category: "Enterprise IT Infrastructure",
-    icon: "🖥️",
-    color: "from-indigo-500 to-purple-600",
-    tag: "Government + Enterprise",
-    projects: [
-      {
-        id: 5,
-        title: "Windows Migration, Onboarding & Helpdesk",
-        teaser: "Monaco Government | Windows 8.1 → 10 | 600+ users",
-        company: "Monaco Government",
-        date: "2019",
-        tag: "Government IT",
-        quickWins: [
-          "100% service continuity",
-          "65% fewer crash tickets",
-          "600+ users onboarded"
-        ],
-        challenges: "Legacy Windows 8.1 systems across Monaco Government services (600+ users) caused security vulnerabilities, compliance failures, and frequent crashes. New OS onboarding + account/server issues overwhelmed helpdesk.",
-        tasks: [
-          "Executed Windows 8.1 → Windows 10 migration across all government services",
-          "Provided onboarding assistance for 600+ users adapting to new OS",
-          "Managed Azure AD user accounts + access maintenance with helpdesk support",
-          "Resolved account and server-related issues during/post-migration",
-          "Created post-migration SOPs + user training reducing support calls"
-        ],
-        results: [
-          "100% service continuity during migration rollout",
-          "Eliminated security vulnerabilities across government systems",
-          "65% reduction in system crash tickets",
-          "Streamlined onboarding + account management for 600+ users"
-        ]
-      },
-      {
-        id: 6,
-        title: "Server Management & Helpdesk Operations",
-        teaser: "SBM Offshore | Monaco, Brazil, Malaysia, Oil Tankers | 1000+ users",
-        company: "SBM Offshore, Monaco",
-        date: "2018",
-        tag: "Global Enterprise",
-        quickWins: [
-          "1000+ users supported",
-          "150+ SOPs created",
-          "Global SLA compliance"
-        ],
-        challenges: "Critical servers (email, file sharing, Active Directory) across SBM Offshore operations in Monaco, Brazil, Malaysia, and oil tankers (1000+ users) suffered frequent outages. Helpdesk handled high-volume tickets manually across global locations.",
-        tasks: [
-          "Managed server infrastructure (email, file servers, Active Directory) for global SBM Offshore operations",
-          "Handled 10-20 daily tickets with varying priorities and critical impacts",
-          "Utilized ticketing system for efficient support across Brazil, Malaysia, and oil tankers",
-          "Resolved Azure AD sync issues affecting 1000+ user accounts",
-          "Documented 150+ SOPs for server maintenance + emergency procedures"
-        ],
-        results: [
-          "Maintained critical operations across global offshore platforms",
-          "Reliable ticket resolution for 10-20 daily high-priority requests",
-          "Established consistent SLA performance for international teams",
-          "Comprehensive documentation enabled seamless team handovers"
-        ]
-      }
-    ]
-  }
+{
+category: "LMS Implementation & EdTech Solutions",
+icon: "🎓",
+color: "from-blue-500 to-indigo-600",
+projects: [
+{
+id: 1,
+title: "Global LearnWorlds LMS Deployment",
+teaser: "+20 countries | SSO + Azure AD | 8 regions live",
+company: "ViewSonic, Taipei",
+date: "2024 - Present",
+challenges: "Regional sales teams used 12+ fragmented LMS platforms with no SSO, causing 40% training dropout rates, manual user provisioning delays, and zero analytics visibility across global markets.",
+tasks: [
+"Architected LearnWorlds SSO + Azure AD integration for 8 regions",
+"Negotiated custom vendor roadmap with 3-month delivery vs 9-month standard",
+"Built AI-powered course templates + auto-localization workflows (FR/IT/EN)",
+"Designed sales onboarding certification paths with 90-day completion tracking",
+"Launched cross-regional adoption campaigns hitting 85% trainer activation"
+],
+results: [
+"+32% customer retention (sales teams certified 2x faster)",
+"75% reduction in regional content deployment time (3 days vs 12)",
+"Pipeline acceleration through scalable training infrastructure",
+"92% SSO adoption rate across +20 countries in 90 days"
 ]
-
-
+}
+]
+},
+{
+category: "Global Localization & Market Expansion",
+icon: "🌍",
+color: "from-emerald-500 to-teal-600",
+projects: [
+{
+id: 2,
+title: "300+ Assets Localized (FR/IT/EN)",
+teaser: "UI + Training + Marketing | Global market expansion",
+company: "ViewSonic, Taipei",
+date: "2022 - Present",
+challenges: "French/Italian markets saw 65% lower conversion rates due to English-only UI, 200+ weekly support tickets for translation requests, and culturally mismatched sales materials blocking expansion.",
+tasks: [
+"Localized 300+ assets (UI strings, 45 training modules, 120 email campaigns, 35 sales decks)",
+"Implemented cultural adaptation framework for compliance (GDPR, regional holidays)",
+"Built automated translation QA pipeline reducing errors by 87%",
+"Collaborated with 12 global sales reps on localization sprints",
+"Created multilingual self-service knowledge base cutting support load"
+],
+results: [
+"-52% support tickets (self-service content adoption)",
+"+41% engagement rates across French/Italian markets",
+"28% higher conversion from localized sales materials",
+"Enabled global pipeline growth through cross-regional alignment"
+]
+}
+]
+},
+{
+category: "Digital Asset Management Systems",
+icon: "📊",
+color: "from-purple-500 to-pink-600",
+projects: [
+{
+id: 3,
+title: "Global Product Hub Development",
+teaser: "Centralized intelligence | +20 countries | Sales acceleration",
+company: "ViewSonic, Taipei",
+date: "2024",
+challenges: "Sales teams wasted 6+ hours/week hunting scattered assets across 17 platforms, inconsistent regional messaging caused 25% lost deals, no version control led to compliance risks.",
+tasks: [
+"Built unified Product Hub integrating LearnWorlds + 7 regional systems",
+"Implemented faceted search + role-based access (sales vs marketing vs trainers)",
+"Automated asset tagging + AI content recommendations",
+"Migrated 2,500+ assets with 99.8% uptime during 4-week rollout",
+"Created SOPs + training achieving 95% adoption in 30 days"
+],
+results: [
+"72% faster asset retrieval (2 min vs 45 min average)",
+"Consistent messaging eliminated 22% deal loss from misalignment",
+"Sales velocity increase through streamlined GTM assets",
+"Scalable foundation now supports +20 countries"
+]
+}
+]
+},
+{
+category: "CRM Implementation & Customer Success",
+icon: "💬",
+color: "from-orange-500 to-red-600",
+projects: [
+{
+id: 4,
+title: "Freshdesk CRM + AI Chatbot",
+teaser: "Blockchain/NFT campaigns | 50% faster responses",
+company: "Lootex, Taipei",
+date: "2021",
+challenges: "Fragmented client data across 5 tools caused 72-hour response delays, NFT campaign support overwhelmed team (300+ tickets/week), no onboarding automation lost 35% early clients.",
+tasks: [
+"Led Freshdesk implementation + custom NFT workflow automations",
+"Deployed multilingual AI chatbots (FR/EN) handling 68% of Tier 1 queries",
+"Built client onboarding SOPs + automated drip campaigns",
+"Integrated blockchain wallet verification + KYC workflows",
+"Analyzed 12K tickets to prioritize high-impact automations"
+],
+results: [
+"58% faster response times (4h → 1.7h average)",
+"AI handled 3,200 tickets/month (68% resolution rate)",
+"+27% client retention through automated onboarding",
+"Reduced churn across NFT campaigns"
+]
+}
+]
+},
+{
+category: "Enterprise IT Infrastructure",
+icon: "🖥️",
+color: "from-indigo-500 to-purple-600",
+projects: [
+{
+id: 5,
+title: "Windows Migration, Onboarding & Helpdesk",
+teaser: "Monaco Government | Windows 8.1 → 10 | 600+ users",
+company: "Monaco Government",
+date: "2019",
+challenges: "Legacy Windows 8.1 systems across Monaco Government services (600+ users) caused security vulnerabilities, compliance failures, and frequent crashes. New OS onboarding + account/server issues overwhelmed helpdesk.",
+tasks: [
+"Executed Windows 8.1 → Windows 10 migration across all government services",
+"Provided onboarding assistance for 600+ users adapting to new OS",
+"Managed Azure AD user accounts + access maintenance with helpdesk support",
+"Resolved account and server-related issues during/post-migration",
+"Created post-migration SOPs + user training reducing support calls"
+],
+results: [
+"100% service continuity during migration rollout",
+"Eliminated security vulnerabilities across government systems",
+"65% reduction in system crash tickets",
+"Streamlined onboarding + account management for 600+ users"
+]
+},
+{
+id: 6,
+title: "Server Management & Helpdesk Operations",
+teaser: "SBM Offshore | Monaco, Brazil, Malaysia, Oil Tankers | 1000+ users",
+company: "SBM Offshore, Monaco",
+date: "2018",
+challenges: "Critical servers (email, file sharing, Active Directory) across SBM Offshore operations in Monaco, Brazil, Malaysia, and oil tankers (1000+ users) suffered frequent outages. Helpdesk handled high-volume tickets manually across global locations.",
+tasks: [
+"Managed server infrastructure (email, file servers, Active Directory) for global SBM Offshore operations",
+"Handled 10-20 daily tickets with varying priorities and critical impacts",
+"Utilized ticketing system for efficient support across Brazil, Malaysia, and oil tankers",
+"Resolved Azure AD sync issues affecting 1000+ user accounts",
+"Documented 150+ SOPs for server maintenance + emergency procedures"
+],
+results: [
+"Maintained critical operations across global offshore platforms",
+"Reliable ticket resolution for 10-20 daily high-priority requests",
+"Established consistent SLA performance for international teams",
+"Comprehensive documentation enabled seamless team handovers"
+]
+}
+]
+}
+]
 
 const skills = [
 {
@@ -427,101 +384,145 @@ className="relative rounded-2xl shadow-2xl w-full object-cover"
 </section>
 
 {/* ✅ COMPLETE PROJECTS SECTION - SEO CATEGORIES + ICONS FIXED */}
-<section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-  <div className="max-w-7xl mx-auto px-4 lg:px-8">
-    <h2 className="text-4xl font-bold text-center mb-16 text-gradient">Projects by Expertise</h2>
-    
-    {projectCategories.map((category) => (
-      <div key={category.category} className="mb-20 last:mb-0">
-        {/* Category Header */}
-        <div className="flex items-center mb-12">
-          <div className={`p-4 rounded-2xl bg-gradient-to-r ${category.color} text-white text-3xl mr-6 shadow-xl`}>
-            {category.icon}
-          </div>
-          <div>
-            <h3 className={`text-3xl font-bold bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}>
-              {category.category}
-            </h3>
-            <span className="inline-block mt-2 px-4 py-2 bg-gray-100 text-sm font-bold rounded-full text-gray-700">
-              {category.tag}
-            </span>
-          </div>
-        </div>
+<section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+<span className="text-gradient">Projects by Expertise Area</span>
+</h2>
 
-        {/* Project Cards - 1 col single, 2 col multiple */}
-        <div className={`grid gap-8 ${category.projects.length === 1 ? 'max-w-2xl mx-auto' : 'md:grid-cols-2'}`}>
-          {category.projects.map((project) => (
-            <div key={project.id} className="group bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
-              {/* Header + Quick Wins */}
-              <div className="p-8">
-                <div className="flex items-start justify-between mb-6">
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-3 mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gray-800">{project.title}</h3>
-                      <span className="px-3 py-1 bg-gradient-to-r from-gray-100 to-gray-200 text-xs font-bold rounded-full">{project.tag}</span>
-                    </div>
-                    <p className="text-lg text-gray-600 mb-6">{project.teaser}</p>
-                    {/* QUICK WINS - 30-sec scan */}
-                    <div className="flex flex-wrap gap-2">
-                      {project.quickWins.map((win, i) => (
-                        <span key={i} className="px-4 py-2 bg-green-100 text-green-800 text-sm font-bold rounded-xl">
-                          {win}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <button 
-                    onClick={(e) => {e.stopPropagation(); setExpandedProject(expandedProject === project.id ? null : project.id)}}
-                    className="w-14 h-14 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-xl hover:shadow-2xl transition-all ml-4 flex items-center justify-center"
-                  >
-                    <svg className={`w-6 h-6 transition-transform ${expandedProject === project.id ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+{projectCategories.map((category) => (
+<div key={category.category} className="mb-16 last:mb-8">
+{/* ✅ CATEGORY HEADER - ICON ONLY ON TITLE */}
+<div className="flex items-center mb-10 px-4">
+<div className={`p-3 rounded-2xl bg-gradient-to-r ${category.color} text-white text-3xl mr-4 shadow-lg`}>
+{category.icon}
+</div>
+<h3 className={`text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}>
+{category.category}
+</h3>
+</div>
 
-              {/* Expandable Details */}
-              <div className={`bg-gradient-to-b from-gray-50 to-white overflow-hidden transition-all duration-700 ${
-                expandedProject === project.id ? 'max-h-96 py-8 px-8' : 'max-h-0'
-              }`}>
-                {expandedProject === project.id && (
-                  <div className="space-y-6">
-                    {/* Company/Date */}
-                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
-                      <div className="flex justify-between items-center">
-                        <div><p className="text-sm font-bold text-gray-600 uppercase tracking-wide">Company</p><p className="text-xl font-bold">{project.company}</p></div>
-                        <div className="text-right"><p className="text-sm font-bold text-gray-600 uppercase">Timeline</p><p className="text-xl font-bold text-blue-600">{project.date}</p></div>
-                      </div>
-                    </div>
-                    {/* Challenges/Tasks/Results - keep your existing structure */}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    ))}
-  </div>
+{/* ✅ 2-COLUMN PROJECTS GRID */}
+<div className="grid md:grid-cols-2 gap-6 px-4">
+{category.projects.map((project) => (
+<div
+key={project.id}
+className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-xl md:hover:scale-[1.02] active:scale-95"
+onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+>
+<div className="p-5 sm:p-6 md:p-8">
+<div className="flex items-start justify-between mb-3 sm:mb-4">
+<div className="flex items-start sm:items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
+{/* ✅ GENERIC PROJECT ICON - NOT CATEGORY ICON */}
+<div className="text-3xl sm:text-4xl md:text-5xl flex-shrink-0">📋</div>
+<div className="flex-1 min-w-0">
+<h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 break-words">{project.title}</h3>
+<p className="text-sm sm:text-base text-gray-600 mt-1 break-words">{project.teaser}</p>
+</div>
+</div>
+<button className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 ml-2 rounded-full bg-blue-100 flex items-center justify-center transition-transform duration-300 ${
+expandedProject === project.id ? 'rotate-180' : ''
+}`}>
+<svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+</svg>
+</button>
+</div>
+
+{/* Expanded Details */}
+<div className={`transition-all duration-500 overflow-hidden ${
+expandedProject === project.id ? 'max-h-[2000px] opacity-100 mt-4 sm:mt-6' : 'max-h-0 opacity-0'
+}`}>
+<div className="border-t pt-4 sm:pt-6 space-y-4 sm:space-y-6">
+{/* Company & Date */}
+<div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg sm:rounded-xl p-3 sm:p-4">
+<div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+<div>
+<p className="text-xs sm:text-sm text-gray-600 font-medium">Company</p>
+<p className="text-sm sm:text-base md:text-lg font-bold text-gray-900 break-words">{project.company}</p>
+</div>
+<div className="sm:text-right">
+<p className="text-xs sm:text-sm text-gray-600 font-medium">Timeline</p>
+<p className="text-sm sm:text-base md:text-lg font-bold text-blue-600">{project.date}</p>
+</div>
+</div>
+</div>
+
+{/* Challenges */}
+<div>
+<h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+<span className="text-xl sm:text-2xl mr-2">🎯</span> Challenges
+</h4>
+<p className="text-sm sm:text-base text-gray-700 leading-relaxed bg-red-50 p-3 sm:p-4 rounded-lg border-l-4 border-red-400">
+{project.challenges}
+</p>
+</div>
+
+{/* Tasks */}
+<div>
+<h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+<span className="text-xl sm:text-2xl mr-2">⚙️</span> Key Tasks
+</h4>
+<ul className="space-y-2 sm:space-y-3">
+{project.tasks.map((task, idx) => (
+<li key={idx} className="flex items-start bg-blue-50 p-3 sm:p-4 rounded-lg">
+<span className="text-blue-600 font-bold mr-2 sm:mr-3 flex-shrink-0 text-lg">•</span>
+<span className="text-sm sm:text-base text-gray-700">{task}</span>
+</li>
+))}
+</ul>
+</div>
+
+{/* Results */}
+<div>
+<h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 flex items-center">
+<span className="text-xl sm:text-2xl mr-2">✨</span> Results & Impact
+</h4>
+<ul className="space-y-2 sm:space-y-3">
+{project.results.map((result, idx) => (
+<li key={idx} className="flex items-start bg-green-50 p-3 sm:p-4 rounded-lg">
+<span className="text-green-600 font-bold mr-2 sm:mr-3 flex-shrink-0 text-lg">✓</span>
+<span className="text-sm sm:text-base text-gray-700 font-medium">{result}</span>
+</li>
+))}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+))}
+</div>
+</div>
+))}
+</div>
 </section>
 
-
 {/* Skills Section */}
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {skills.map((group, i) => (
-    <div key={i} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6">{group.category}</h3>
-      <div className="grid grid-cols-2 gap-3">
-        {group.items.map((skill, j) => (
-          <span key={j} className="px-4 py-3 bg-white text-gray-800 rounded-xl shadow-sm hover:shadow-md transition font-medium text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-  ))}
+<section id="skills" className="py-12 sm:py-16 md:py-20 bg-white">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
+<span className="text-gradient">Skills & Expertise</span>
+</h2>
+<div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+{skills.map((skillGroup, index) => (
+<div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-5 sm:p-6 md:p-8 shadow-md hover:shadow-lg transition">
+<h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">{skillGroup.category}</h3>
+<div className="flex flex-wrap gap-2">
+{skillGroup.items.map((skill, idx) => (
+<span
+key={idx}
+className="px-3 py-2 sm:px-4 bg-white text-gray-700 rounded-lg shadow-sm hover:shadow-md transition text-xs sm:text-sm font-medium"
+>
+{skill}
+</span>
+))}
 </div>
+</div>
+))}
+</div>
+</div>
+</section>
 
 {/* Education Section */}
 <section id="education" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-purple-50">
@@ -560,17 +561,20 @@ I'm based in Taipei and open to opportunities in EdTech, AI enablement, localiza
 and digital transformation. Feel free to reach out for collaborations, consulting,
 or speaking opportunities.
 </p>
-<div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-  <a href="https://www.linkedin.com/in/nizar-el-fyek-a51318144/" target="_blank" rel="noopener noreferrer"
-     className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl hover:shadow-2xl hover:-translate-y-1 transition-all shadow-xl text-lg font-bold">
-    👔 Connect on LinkedIn
-  </a>
-  <a href="mailto:nizarelfyek95pro@gmail.com" 
-     className="px-8 py-4 border-3 border-blue-600 text-blue-600 rounded-2xl hover:bg-blue-600 hover:text-white transition-all font-bold text-lg">
-    💬 Get in Touch
-  </a>
+<div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+<a
+href="mailto:nizarelfyek95pro@gmail.com"
+className="px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 active:scale-95 transition shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg font-medium break-all"
+>
+📧 nizarelfyek95pro@gmail.com
+</a>
+<a
+href="tel:+886965252126"
+className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 active:scale-95 transition text-sm sm:text-base md:text-lg font-medium"
+>
+📱 +886-965-252-126
+</a>
 </div>
-
 <div className="pt-4 sm:pt-8">
 <a
 href="https://www.linkedin.com/in/nizar-el-fyek-a51318144/"
