@@ -160,10 +160,10 @@ function App() {
         {
           id: 6,
           title: "Server Management & Helpdesk Operations",
-          teaser: "SBM Offshore | Brazil, Malaysia, Oil Tankers | 1000+ users",
-          company: "SBM Offshore",
+          teaser: "SBM Offshore | Monaco, Brazil, Malaysia, Oil Tankers | 1000+ users",
+          company: "SBM Offshore, Monaco",
           date: "2018",
-          challenges: "Critical servers (email, file sharing, Active Directory) across SBM Offshore operations in Brazil, Malaysia, and oil tankers (1000+ users) suffered frequent outages. Helpdesk handled high-volume tickets manually across global locations.",
+          challenges: "Critical servers (email, file sharing, Active Directory) across SBM Offshore operations in Monaco, Brazil, Malaysia, and oil tankers (1000+ users) suffered frequent outages. Helpdesk handled high-volume tickets manually across global locations.",
           tasks: [
             "Managed server infrastructure (email, file servers, Active Directory) for global SBM Offshore operations",
             "Handled 10-20 daily tickets with varying priorities and critical impacts",
