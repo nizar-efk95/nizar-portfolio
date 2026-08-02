@@ -239,16 +239,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-gray-800 selection:bg-blue-500 selection:text-white">
-      {/* Dynamic Header Style */}
-      <style jsx>{`
-        .text-gradient {
-          background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #0d9488 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-      `}</style>
-
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-3' : 'bg-white/80 backdrop-blur-sm py-4'
@@ -301,8 +291,8 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50/80 via-white to-purple-50/80 pt-20">
+      {/* Hero Header */}
+      <header className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 via-white to-slate-200 pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
             <div className="md:col-span-7 space-y-6 text-center md:text-left">
@@ -355,8 +345,9 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
+      <main>
       {/* About Section */}
       <section id="about" className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -444,10 +435,11 @@ function App() {
                           <p className="text-sm sm:text-base text-gray-600 mt-1 font-medium">{project.teaser}</p>
                         </div>
                         <button
-                          className={`w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center transition-transform duration-300 flex-shrink-0 ${
-                            expandedProject === project.id ? 'rotate-180 bg-blue-600 text-white' : 'text-blue-600 hover:bg-blue-100'
+                          className={`w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center transition-transform duration-300 flex-shrink-0 ${
+                            expandedProject === project.id ? 'rotate-180 bg-slate-800 text-white' : 'text-slate-600 hover:bg-slate-200'
                           }`}
-                          aria-label="Expand details"
+                          aria-expanded={expandedProject === project.id}
+                          aria-label={expandedProject === project.id ? "Collapse project details" : "Expand project details"}
                         >
                           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -635,6 +627,7 @@ function App() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="py-8 bg-gray-900 text-white text-center text-sm text-gray-400">
