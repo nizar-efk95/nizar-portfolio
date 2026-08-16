@@ -126,20 +126,21 @@ function App() {
       projects: [
         {
           id: 5,
-          title: "Enterprise Systems & Networks Executive",
-          teaser: "Monaco Government | SBM Offshore | Monaco Telecom",
+          title: "IT System & Networks Executive",
+          teaser: "Government of Monaco | Monaco Telecom | SBM Offshore",
           company: "Monaco Digital, Monaco",
           date: "06/2018 - 08/2019",
-          challenges: "Supporting mission-critical IT infrastructure and server operations for high-security government and offshore enterprise clients.",
+          challenges: "Enterprise & Public Sector Clients: Supporting mission-critical IT infrastructure and server operations for high-security government, telecom, and offshore enterprise environments.",
           tasks: [
-            "Provided network and system support (Azure AD, IBM Lotus Notes, Microsoft Exchange)",
-            "Worked with enterprise and government clients including Government of Monaco, SBM Offshore, and Monaco Telecom",
-            "Handled OS and software integrations, upgrades, and user training across enterprise environments"
+            "Directory Services & Cloud: Administered IAM, user provisioning, and mail services via Microsoft Azure AD, Active Directory, Exchange, and IBM systems for high-compliance government and telecom clients.",
+            "Storage & Systems Engineering: Administered enterprise NAS, SAN, and storage solutions, server virtualization (VM lifecycle & resource allocation), and automated backup workflows for mission-critical client infrastructure.",
+            "Supported the deployment and administration of enterprise IT solutions across government, telecom, and corporate environments, translating customer requirements into practical infrastructure solutions.",
+            "Deployment & Endpoint Support: Managed remote OS deployment, automated software installation, and post-deployment system configuration while delivering Tier 2/3 troubleshooting and user training for enterprise end-users."
           ],
           results: [
-            "Maintained 100% operational continuity for government and telecom client networks",
-            "Executed enterprise software upgrades and user training smoothly",
-            "Streamlined identity management via Azure AD"
+            "Maintained operational continuity for mission-critical government and telecom client networks",
+            "Executed automated remote OS deployments and enterprise software installations",
+            "Streamlined identity management and user provisioning via Azure AD and Active Directory"
           ]
         }
       ]
