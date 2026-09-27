@@ -608,7 +608,7 @@ function App() {
                 ✉️ nizarelfyek95pro@gmail.com
               </a>
               <a
-                href="tel:+88696252126"
+                href="tel:+886 965252126"
                 className="p-4 bg-gray-50 border border-gray-200 text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 📱 +886 96 252 126
