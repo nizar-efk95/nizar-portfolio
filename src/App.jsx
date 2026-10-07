@@ -211,8 +211,8 @@ function App() {
   ]
 
   const languages = [
-    { name: "French", level: "Native", code: "fr", flag: "🇫🇷" },
     { name: "Italian", level: "Native", code: "it", flag: "🇮🇹" },
+    { name: "French", level: "Native", code: "fr", flag: "🇫🇷" },
     { name: "English", level: "Fluent", code: "gb", flag: "🇬🇧" },
     { name: "Mandarin", level: "Basic", code: "cn", flag: "中" }
   ]
