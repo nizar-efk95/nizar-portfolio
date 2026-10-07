@@ -19,11 +19,11 @@ function App() {
     setMobileMenuOpen(false)
   }
 
-  // ✅ CV-ALIGNED EXPERIENCE CATEGORIES
+  // âœ… CV-ALIGNED EXPERIENCE CATEGORIES
   const projectCategories = [
     {
       category: "Business Development & Enterprise Operations",
-      icon: "🚀",
+      icon: "ðŸš€",
       color: "from-amber-500 to-orange-600",
       projects: [
         {
@@ -52,18 +52,18 @@ function App() {
     },
     {
       category: "LMS Deployment & EdTech Solutions",
-      icon: "🎓",
+      icon: "ðŸŽ“",
       color: "from-blue-500 to-indigo-600",
       projects: [
         {
           id: 2,
           title: "Global LearnWorlds LMS & Product Intelligence Hub",
-          teaser: "8+ Regions | 2000+ Active Users | 300+ Localized Assets",
+          teaser: "8+ Regions | 5000+ Active Users | 300+ Localized Assets",
           company: "ViewSonic, Taipei",
           date: "09/2022 - 03/2026",
           challenges: "Regional sales and customer training teams faced fragmented onboarding content, missing localization, and inefficient access to marketing assets across global regions.",
           tasks: [
-            "Designed and deployed LearnWorlds LMS platform across 8+ regions and 2000+ users with localized onboarding journeys",
+            "Designed and deployed LearnWorlds LMS platform across 8+ regions and 5000+ users with localized onboarding journeys",
             "Built a centralized Product Intelligence Hub to streamline global sales and marketing asset access",
             "Implemented AI tools to automate course creation and data-driven content delivery",
             "Localized 300+ digital assets (UI, articles, emails) into French and Italian",
@@ -71,7 +71,7 @@ function App() {
           ],
           results: [
             "40% reduction in support requests through localized self-service assets",
-            "Successfully trained and retained 2000+ active users across 8+ global regions",
+            "Successfully trained and retained 5000+ active users across 8+ global regions",
             "Accelerated course deployment cycles with AI automation",
             "Streamlined cross-regional GTM alignment via Product Intelligence Hub"
           ]
@@ -80,7 +80,7 @@ function App() {
     },
     {
       category: "Marketing Strategy, CRM & Expansion",
-      icon: "🌍",
+      icon: "ðŸŒ",
       color: "from-purple-500 to-pink-600",
       projects: [
         {
@@ -123,7 +123,7 @@ function App() {
     },
     {
       category: "IT System & Network Infrastructure",
-      icon: "🖥️",
+      icon: "ðŸ–¥ï¸",
       color: "from-emerald-500 to-teal-600",
       projects: [
         {
@@ -193,7 +193,7 @@ function App() {
     {
       category: "Digital Operations & AI",
       items: [
-        "Global LMS Deployment (2000+ users)",
+        "Global LMS Deployment (5000+ users)",
         "Product Intelligence Hub Design",
         "AI Course Creation Automation",
         "AI Workflow Systems Integration",
@@ -213,27 +213,27 @@ function App() {
   ]
 
   const languages = [
-    { name: "Italian", level: "Native", code: "it", flag: "🇮🇹" },
-    { name: "French", level: "Native", code: "fr", flag: "🇫🇷" },
-    { name: "English", level: "Fluent", code: "gb", flag: "🇬🇧" },
-    { name: "Mandarin", level: "Basic", code: "cn", flag: "中" }
+    { name: "Italian", level: "Native", code: "it", flag: "ðŸ‡®ðŸ‡¹" },
+    { name: "French", level: "Native", code: "fr", flag: "ðŸ‡«ðŸ‡·" },
+    { name: "English", level: "Fluent", code: "gb", flag: "ðŸ‡¬ðŸ‡§" },
+    { name: "Mandarin", level: "Basic", code: "cn", flag: "ä¸­" }
   ]
 
   const education = [
     {
-      degree: "IMBA – International Master of Business Administration",
+      degree: "IMBA â€“ International Master of Business Administration",
       school: "Ming Chuan University",
       period: "2020 - 2022",
       location: "Taipei, Taiwan"
     },
     {
-      degree: "Bachelor – Web Design",
+      degree: "Bachelor â€“ Web Design",
       school: "ActivMedia Digital School",
       period: "2019 - 2020",
       location: "Nice, France"
     },
     {
-      degree: "BTEC Higher National Diploma (BTS) – IT Systems & Network Administration",
+      degree: "BTEC Higher National Diploma (BTS) â€“ IT Systems & Network Administration",
       school: "Estienne d'Orves (Partner of the University of Nice)",
       period: "2015 - 2017",
       location: "Nice, France"
@@ -301,7 +301,7 @@ function App() {
             <div className="md:col-span-7 space-y-6 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 font-semibold text-xs sm:text-sm">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                Based in Taipei, Taiwan • Trilingual Professional
+                Based in Taipei, Taiwan â€¢ Trilingual Professional
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
                 <span className="text-gradient">Nizar EL FYEK</span>
@@ -328,7 +328,7 @@ function App() {
                   href="mailto:nizarelfyek95pro@gmail.com"
                   className="px-6 py-3.5 bg-white border-2 border-gray-200 text-gray-700 font-medium rounded-xl hover:border-blue-600 hover:text-blue-600 transition text-center shadow-sm"
                 >
-                  ✉️ nizarelfyek95pro@gmail.com
+                  âœ‰ï¸ nizarelfyek95pro@gmail.com
                 </a>
               </div>
             </div>
@@ -365,7 +365,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-2xl border border-blue-100 hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl font-bold mb-4">💼</div>
+              <div className="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl font-bold mb-4">ðŸ’¼</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">GTM & Sales Enablement</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Specialized in building enterprise sales pipelines ($260K+), creating co-branded proposals for global luxury brands, and managing VIP account lifecycles.
@@ -373,15 +373,15 @@ function App() {
             </div>
 
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 sm:p-8 rounded-2xl border border-purple-100 hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center text-2xl font-bold mb-4">🤖</div>
+              <div className="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center text-2xl font-bold mb-4">ðŸ¤–</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">AI Systems & Digital Ops</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Integrating AI automation workflows, building Product Intelligence Hubs, and deploying global LMS (2000+ users) & CRM systems (Freshdesk/HubSpot).
+                Integrating AI automation workflows, building Product Intelligence Hubs, and deploying global LMS (5000+ users) & CRM systems (Freshdesk/HubSpot).
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-teal-50 to-emerald-50 p-6 sm:p-8 rounded-2xl border border-teal-100 hover:shadow-md transition">
-              <div className="w-12 h-12 rounded-xl bg-teal-600 text-white flex items-center justify-center text-2xl font-bold mb-4">🌐</div>
+              <div className="w-12 h-12 rounded-xl bg-teal-600 text-white flex items-center justify-center text-2xl font-bold mb-4">ðŸŒ</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Trilingual Localization</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Trilingual in English, French, and Italian. Successfully localized 300+ digital assets for European GTM execution, cutting support requests by 40%.
@@ -431,7 +431,7 @@ function App() {
                               {project.company}
                             </span>
                             <span className="px-3 py-1 bg-gray-100 text-gray-600 font-medium text-xs rounded-full">
-                              📅 {project.date}
+                              ðŸ“… {project.date}
                             </span>
                           </div>
                           <h4 className="text-xl sm:text-2xl font-bold text-gray-900">{project.title}</h4>
@@ -458,7 +458,7 @@ function App() {
                           {/* Challenges */}
                           <div>
                             <h5 className="text-sm uppercase tracking-wider font-bold text-gray-500 mb-2 flex items-center gap-2">
-                              🎯 Context & Challenge
+                              ðŸŽ¯ Context & Challenge
                             </h5>
                             <p className="text-sm sm:text-base text-gray-700 leading-relaxed bg-amber-50/60 p-4 rounded-xl border-l-4 border-amber-400">
                               {project.challenges}
@@ -468,12 +468,12 @@ function App() {
                           {/* Key Responsibilities */}
                           <div>
                             <h5 className="text-sm uppercase tracking-wider font-bold text-gray-500 mb-3 flex items-center gap-2">
-                              ⚙️ Key Responsibilities & Execution
+                              âš™ï¸ Key Responsibilities & Execution
                             </h5>
                             <ul className="grid gap-2.5">
                               {project.tasks.map((task, idx) => (
                                 <li key={idx} className="flex items-start bg-blue-50/50 p-3.5 rounded-xl text-sm sm:text-base text-gray-700">
-                                  <span className="text-blue-600 font-bold mr-3 flex-shrink-0">•</span>
+                                  <span className="text-blue-600 font-bold mr-3 flex-shrink-0">â€¢</span>
                                   <span>{task}</span>
                                 </li>
                               ))}
@@ -483,12 +483,12 @@ function App() {
                           {/* Quantified Impact */}
                           <div>
                             <h5 className="text-sm uppercase tracking-wider font-bold text-gray-500 mb-3 flex items-center gap-2">
-                              ✨ Quantified Impact & Deliverables
+                              âœ¨ Quantified Impact & Deliverables
                             </h5>
                             <ul className="grid sm:grid-cols-2 gap-3">
                               {project.results.map((result, idx) => (
                                 <li key={idx} className="flex items-start bg-emerald-50/70 p-3.5 rounded-xl text-sm font-semibold text-emerald-900 border border-emerald-100">
-                                  <span className="text-emerald-600 mr-2 flex-shrink-0">✓</span>
+                                  <span className="text-emerald-600 mr-2 flex-shrink-0">âœ“</span>
                                   <span>{result}</span>
                                 </li>
                               ))}
@@ -530,7 +530,7 @@ function App() {
                       </span>
                     </div>
                     <h4 className="text-xl sm:text-2xl font-bold text-gray-900">Global EdTech Rollout (ViewSonic Academy)</h4>
-                    <p className="text-sm sm:text-base text-gray-600 mt-1 font-medium">Visual proof of the global LMS platform deployment. Localized across 8+ regions and serving 2,000+ active users.</p>
+                    <p className="text-sm sm:text-base text-gray-600 mt-1 font-medium">Visual proof of the global LMS platform deployment. Localized across 8+ regions and serving 5,000+ active users.</p>
                   </div>
                   <button
                     className={`w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center transition-transform duration-300 flex-shrink-0 ${
@@ -548,7 +548,7 @@ function App() {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div className="space-y-4">
                         <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
-                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. I created independent, localized Academy versions for distinct Regional Business teams: North America (US & Canada), Southeast Asia (Malaysia, Indonesia, Philippines, Singapore), Latin America (incl. Brazil), Middle East, Türkiye, Taiwan, UK, and Global Regions (Europe, Africa, Australia).
+                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. I created independent, localized Academy versions for distinct Regional Business teams: North America (US & Canada), Southeast Asia (Malaysia, Indonesia, Philippines, Singapore), Latin America (incl. Brazil), Middle East, TÃ¼rkiye, Taiwan, UK, and Global Regions (Europe, Africa, Australia).
                         </p>
                         <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
                           The platform completely automated what was previously a manual certification and badge delivery process for educators and partners. Designed for massive scalability, it features an infrastructure ready for monetization, modular interactive course blocks (allowing content updates without rebuilding entire courses), and uses AI for course/regional feedback and reporting. It also hosts live webinars and provides Official Partner certifications.
@@ -699,13 +699,13 @@ function App() {
                 href="mailto:nizarelfyek95pro@gmail.com"
                 className="p-4 bg-blue-50 border border-blue-100 text-blue-700 font-semibold rounded-2xl hover:bg-blue-100 transition flex items-center justify-center gap-2 text-sm sm:text-base break-all"
               >
-                ✉️ nizarelfyek95pro@gmail.com
+                âœ‰ï¸ nizarelfyek95pro@gmail.com
               </a>
               <a
                 href="tel:+886965252126"
                 className="p-4 bg-gray-50 border border-gray-200 text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
-                📱 +886 965 252 126
+                ðŸ“± +886 965 252 126
               </a>
             </div>
 
@@ -716,7 +716,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-2xl hover:from-blue-700 hover:to-indigo-700 transition shadow-lg hover:shadow-xl"
               >
-                Connect on LinkedIn →
+                Connect on LinkedIn â†’
               </a>
             </div>
           </div>
@@ -727,7 +727,7 @@ function App() {
       {/* Footer */}
       <footer className="py-8 bg-gray-900 text-white text-center text-sm text-gray-400">
         <div className="max-w-7xl mx-auto px-4">
-          <p>© 2026 Nizar EL FYEK. All rights reserved.</p>
+          <p>Â© 2026 Nizar EL FYEK. All rights reserved.</p>
         </div>
       </footer>
 
