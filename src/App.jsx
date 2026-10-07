@@ -546,17 +546,21 @@ function App() {
                <div className={`transition-all duration-500 overflow-hidden ${expandedPortfolio === 1 ? 'max-h-[3000px] opacity-100 border-t border-gray-100' : 'max-h-0 opacity-0'}`}>
                  <div className="p-6 sm:p-8 bg-gray-50/50">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
-                      <div className="space-y-6">
+                      <div className="space-y-4">
                         <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
-                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. I created independent, localized Academy versions for distinct Regional Business teams: North America (US & Canada), Southeast Asia (Malaysia, Indonesia, Philippines, Singapore), Latin America (incl. Brazil), Middle East, Türkiye, Taiwan, UK, and Global Regions (Europe, Africa, Australia). The platform also provides Official Partner certifications, hosts live webinars for educators, and features a fully functional resource dashboard.
+                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. I created independent, localized Academy versions for distinct Regional Business teams: North America (US & Canada), Southeast Asia (Malaysia, Indonesia, Philippines, Singapore), Latin America (incl. Brazil), Middle East, Türkiye, Taiwan, UK, and Global Regions (Europe, Africa, Australia).
                         </p>
-                        <div className="flex flex-wrap gap-2">
+                        <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
+                          The platform completely automated what was previously a manual certification and badge delivery process for educators and partners. Designed for massive scalability, it features an infrastructure ready for monetization, modular interactive course blocks (allowing content updates without rebuilding entire courses), and uses AI for course/regional feedback and reporting. It also hosts live webinars and provides Official Partner certifications.
+                        </p>
+                        <div className="flex flex-wrap gap-2 pt-2">
                           <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">LearnWorlds LMS</span>
                           <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">Cross-Regional GTM</span>
                           <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">Product Management</span>
+                          <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">AI Integration</span>
                         </div>
                         <div>
-                          <a href="https://academy.viewsonic.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-sm hover:shadow-md">
+                          <a href="https://academy.viewsonic.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-sm hover:shadow-md mt-2">
                             View Live Academy <span aria-hidden="true">&rarr;</span>
                           </a>
                         </div>
@@ -569,12 +573,12 @@ function App() {
                           '/nizar-portfolio/viewsonic-catalog.png',
                           '/nizar-portfolio/viewsonic-resources.png'
                         ].map((imgSrc, i) => (
-                          <div key={i} className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-start justify-center cursor-zoom-in group" onClick={() => setSelectedImage(imgSrc)}>
+                          <div key={i} className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center cursor-zoom-in group p-3" onClick={() => setSelectedImage(imgSrc)}>
                             <img 
                               src={imgSrc} 
                               alt={`ViewSonic Academy Screenshot ${i+1}`} 
-                              className="w-full object-cover group-hover:scale-105 transition duration-500" 
-                              style={{ height: "180px", objectPosition: "top" }} 
+                              className="w-full object-contain group-hover:scale-105 transition duration-500" 
+                              style={{ height: "220px", imageRendering: "high-quality" }} 
                             />
                           </div>
                         ))}
