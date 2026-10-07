@@ -4,6 +4,7 @@ function App() {
   const [scrolled, setScrolled] = useState(false)
   const [expandedProject, setExpandedProject] = useState(null)
   const [expandedPortfolio, setExpandedPortfolio] = useState(1)
+  const [selectedImage, setSelectedImage] = useState(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -562,15 +563,21 @@ function App() {
                       </div>
                       
                       <div className="grid grid-cols-2 gap-4">
-                        <div className="col-span-2 overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
-                          <img src="/nizar-portfolio/viewsonic-hero.png" alt="ViewSonic Academy Landing Page" className="w-full h-auto object-cover hover:scale-105 transition duration-500" />
-                        </div>
-                        <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
-                          <img src="/nizar-portfolio/viewsonic-catalog.png" alt="ViewSonic Academy Course Catalog showing localized regions" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
-                        </div>
-                        <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
-                          <img src="/nizar-portfolio/viewsonic-resources.png" alt="ViewSonic Academy Video Resources" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
-                        </div>
+                        {[
+                          '/nizar-portfolio/viewsonic-hero.png',
+                          '/nizar-portfolio/viewsonic-full.png',
+                          '/nizar-portfolio/viewsonic-catalog.png',
+                          '/nizar-portfolio/viewsonic-resources.png'
+                        ].map((imgSrc, i) => (
+                          <div key={i} className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-start justify-center cursor-zoom-in group" onClick={() => setSelectedImage(imgSrc)}>
+                            <img 
+                              src={imgSrc} 
+                              alt={`ViewSonic Academy Screenshot ${i+1}`} 
+                              className="w-full object-cover group-hover:scale-105 transition duration-500" 
+                              style={{ height: "180px", objectPosition: "top" }} 
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
                  </div>
@@ -719,6 +726,29 @@ function App() {
           <p>© 2026 Nizar EL FYEK. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-[100] flex items-start justify-center bg-black/90 p-4 sm:p-8 overflow-y-auto cursor-zoom-out backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-full max-w-5xl my-auto flex flex-col items-center">
+            <button 
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition text-4xl"
+              onClick={() => setSelectedImage(null)}
+            >
+              &times;
+            </button>
+            <img 
+              src={selectedImage} 
+              alt="Enlarged view" 
+              className="w-full h-auto object-contain rounded-xl shadow-2xl cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
