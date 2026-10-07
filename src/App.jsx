@@ -211,10 +211,10 @@ function App() {
   ]
 
   const languages = [
-    { name: "French", level: "Native", flag: "🇫🇷" },
-    { name: "Italian", level: "Native", flag: "🇮🇹" },
-    { name: "English", level: "Fluent", flag: "🇬🇧" },
-    { name: "Mandarin", level: "Basic", flag: "🇹🇼" }
+    { name: "French", level: "Native", flag: "FR" },
+    { name: "Italian", level: "Native", flag: "IT" },
+    { name: "English", level: "Fluent", flag: "EN" },
+    { name: "Mandarin", level: "Basic", flag: "中" }
   ]
 
   const education = [
