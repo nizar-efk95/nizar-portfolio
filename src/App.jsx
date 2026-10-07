@@ -573,12 +573,11 @@ function App() {
                           '/nizar-portfolio/viewsonic-catalog.png',
                           '/nizar-portfolio/viewsonic-resources.png'
                         ].map((imgSrc, i) => (
-                          <div key={i} className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center cursor-zoom-in group p-3" onClick={() => setSelectedImage(imgSrc)}>
+                          <div key={i} className="relative overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-100 cursor-zoom-in group h-32 sm:h-48" onClick={() => setSelectedImage(imgSrc)}>
                             <img 
                               src={imgSrc} 
                               alt={`ViewSonic Academy Screenshot ${i+1}`} 
-                              className="w-full object-contain group-hover:scale-105 transition duration-500" 
-                              style={{ height: "220px", imageRendering: "high-quality" }} 
+                              className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" 
                             />
                           </div>
                         ))}
