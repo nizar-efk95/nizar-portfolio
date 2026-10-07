@@ -603,7 +603,7 @@ function App() {
               <span className="text-gradient">Let's get in touch</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Based in Taipei, Taiwan. Open to global opportunities in Business Development, EdTech & AI Solutions, Product Operations, and Localization.
+              Based in Taipei, Taiwan. Open to global opportunities in Business Development, Tech & AI Solutions, Product Operations, and Customer Success.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto pt-4">
