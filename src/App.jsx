@@ -503,6 +503,51 @@ function App() {
         </div>
       </section>
 
+      {/* Featured Work Section */}
+      <section id="featured-work" className="py-16 sm:py-20 bg-slate-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+              <span className="text-gradient">Featured Work: ViewSonic Academy</span>
+            </h2>
+            <p className="text-lg text-gray-600">
+              Visual proof of the global LMS platform deployment. Localized across 8+ regions and serving 2,000+ active users.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 items-center bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-gray-900">Global EdTech Rollout</h3>
+              <p className="text-gray-600 leading-relaxed">
+                As the EdTech Project Manager, I architected and deployed this global Learning Management System. The platform features localized content tracks for regions like India, Thailand, and the UK, integrated video modules, and a fully functional resource dashboard.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">LearnWorlds LMS</span>
+                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">Cross-Regional GTM</span>
+                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">Product Management</span>
+              </div>
+              <div>
+                <a href="https://academy.viewsonic.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-sm hover:shadow-md">
+                  View Live Academy <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              <div className="col-span-2 overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
+                <img src="/nizar-portfolio/viewsonic-hero.png" alt="ViewSonic Academy Landing Page" className="w-full h-auto object-cover hover:scale-105 transition duration-500" />
+              </div>
+              <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
+                <img src="/nizar-portfolio/viewsonic-catalog.png" alt="ViewSonic Academy Course Catalog showing localized regions" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
+              </div>
+              <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
+                <img src="/nizar-portfolio/viewsonic-resources.png" alt="ViewSonic Academy Video Resources" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills & Competencies Section */}
       <section id="skills" className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
