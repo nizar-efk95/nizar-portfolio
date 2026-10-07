@@ -600,7 +600,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              <span className="text-gradient">Get in Touch</span>
+              <span className="text-gradient">Let's get in touch</span>
             </h2>
             <p className="text-lg text-gray-600">
               Based in Taipei, Taiwan. Open to global opportunities in Business Development, EdTech & AI Solutions, Product Operations, and Localization.
