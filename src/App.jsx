@@ -734,12 +734,12 @@ function App() {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-[100] flex items-start justify-center bg-black/90 p-4 sm:p-8 overflow-y-auto cursor-zoom-out backdrop-blur-sm"
+          className="fixed inset-0 z-[100] bg-black/90 p-4 sm:p-12 overflow-y-auto cursor-zoom-out backdrop-blur-sm"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative w-full max-w-5xl my-auto flex flex-col items-center">
+          <div className="relative w-full max-w-5xl mx-auto my-8">
             <button 
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition text-4xl"
+              className="absolute -top-8 right-0 text-white hover:text-gray-300 transition text-4xl font-bold"
               onClick={() => setSelectedImage(null)}
             >
               &times;
@@ -747,7 +747,8 @@ function App() {
             <img 
               src={selectedImage} 
               alt="Enlarged view" 
-              className="w-full h-auto object-contain rounded-xl shadow-2xl cursor-default"
+              className="w-full h-auto rounded-xl shadow-2xl cursor-default"
+              style={{ imageRendering: "high-quality" }}
               onClick={(e) => e.stopPropagation()}
             />
           </div>
