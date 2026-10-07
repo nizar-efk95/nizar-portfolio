@@ -548,7 +548,7 @@ function App() {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div className="space-y-6">
                         <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
-                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. The platform features localized content tracks for regions like India, Thailand, and the UK, integrated video modules, and a fully functional resource dashboard.
+                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. I created independent, localized Academy versions for distinct Regional Business teams: North America (US & Canada), Southeast Asia (Malaysia, Indonesia, Philippines, Singapore), Latin America (incl. Brazil), Middle East, Türkiye, Taiwan, UK, and Global Regions (Europe, Africa, Australia). The platform also provides Official Partner certifications, hosts live webinars for educators, and features a fully functional resource dashboard.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">LearnWorlds LMS</span>
