@@ -334,7 +334,7 @@ function App() {
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-3xl blur-2xl opacity-25"></div>
                 <img
-                  src="/nizar-portfolio/nizar.jpg"
+                  src="/nizar-portfolio/profile-photo.jpg"
                   alt="Nizar EL FYEK"
                   className="relative rounded-3xl shadow-2xl w-full object-cover border-4 border-white"
                   onError={(e) => {
