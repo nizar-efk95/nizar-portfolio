@@ -232,7 +232,7 @@ function App() {
     },
     {
       degree: "BTEC Higher National Diploma (BTS) – IT Systems & Network Administration",
-      school: "ActivMedia / Lycée Beau Site",
+      school: "Estienne d'Orves (Partner of the University of Nice)",
       period: "2015 - 2017",
       location: "Nice, France"
     }
