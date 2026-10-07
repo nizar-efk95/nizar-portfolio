@@ -545,7 +545,7 @@ function App() {
               Language Proficiencies
             </h2>
             <p className="text-blue-200 text-lg">
-              Trilingual communication enabling seamless cross-regional stakeholder management.
+              Trilingual proficiency facilitating communications with people from different regions.
             </p>
           </div>
 
