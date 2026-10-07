@@ -211,10 +211,10 @@ function App() {
   ]
 
   const languages = [
-    { name: "French", level: "Native", flag: "🇫🇷" },
-    { name: "Italian", level: "Native", flag: "🇮🇹" },
-    { name: "English", level: "Fluent", flag: "🇬🇧" },
-    { name: "Mandarin", level: "Basic", flag: "中" }
+    { name: "French", level: "Native", code: "fr", flag: "🇫🇷" },
+    { name: "Italian", level: "Native", code: "it", flag: "🇮🇹" },
+    { name: "English", level: "Fluent", code: "gb", flag: "🇬🇧" },
+    { name: "Mandarin", level: "Basic", code: "cn", flag: "中" }
   ]
 
   const education = [
@@ -551,8 +551,14 @@ function App() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {languages.map((lang, idx) => (
-              <div key={idx} className="bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/10 hover:bg-white/15 transition">
-                <div className="text-4xl mb-3">{lang.flag}</div>
+              <div key={idx} className="bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/10 hover:bg-white/15 transition flex flex-col items-center">
+                <div className="text-4xl mb-3 h-10 flex items-center justify-center">
+                  {lang.name === "Mandarin" ? (
+                    <span>{lang.flag}</span>
+                  ) : (
+                    <img src={`https://flagcdn.com/w80/${lang.code}.png`} alt={`${lang.name} flag`} className="h-8 shadow-sm rounded-sm" />
+                  )}
+                </div>
                 <h3 className="text-xl font-bold text-white mb-1">{lang.name}</h3>
                 <p className="text-blue-300 font-medium text-sm">{lang.level}</p>
               </div>
