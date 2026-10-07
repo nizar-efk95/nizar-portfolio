@@ -213,7 +213,7 @@ function App() {
   const languages = [
     { name: "French", level: "Native", flag: "🇫🇷" },
     { name: "Italian", level: "Native", flag: "🇮🇹" },
-    { name: "English", level: "Fluent (TOEIC 880)", flag: "🇬🇧" },
+    { name: "English", level: "Fluent", flag: "🇬🇧" },
     { name: "Mandarin", level: "Basic", flag: "🇹🇼" }
   ]
 
