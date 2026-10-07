@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [scrolled, setScrolled] = useState(false)
   const [expandedProject, setExpandedProject] = useState(null)
+  const [expandedPortfolio, setExpandedPortfolio] = useState(1)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -506,44 +507,75 @@ function App() {
       {/* Featured Work Section */}
       <section id="featured-work" className="py-16 sm:py-20 bg-slate-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
-              <span className="text-gradient">Featured Work: ViewSonic Academy</span>
+              <span className="text-gradient">Some Projects</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Visual proof of the global LMS platform deployment. Localized across 8+ regions and serving 2,000+ active users.
+              Visual proof of products and platforms deployed across various regions.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 items-center bg-white p-6 sm:p-8 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Global EdTech Rollout</h3>
-              <p className="text-gray-600 leading-relaxed">
-                As the EdTech Project Manager, I architected and deployed this global Learning Management System. The platform features localized content tracks for regions like India, Thailand, and the UK, integrated video modules, and a fully functional resource dashboard.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">LearnWorlds LMS</span>
-                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">Cross-Regional GTM</span>
-                <span className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">Product Management</span>
-              </div>
-              <div>
-                <a href="https://academy.viewsonic.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-sm hover:shadow-md">
-                  View Live Academy <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
-                <img src="/nizar-portfolio/viewsonic-hero.png" alt="ViewSonic Academy Landing Page" className="w-full h-auto object-cover hover:scale-105 transition duration-500" />
-              </div>
-              <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
-                <img src="/nizar-portfolio/viewsonic-catalog.png" alt="ViewSonic Academy Course Catalog showing localized regions" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
-              </div>
-              <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-gray-50 flex items-center justify-center">
-                <img src="/nizar-portfolio/viewsonic-resources.png" alt="ViewSonic Academy Video Resources" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
-              </div>
-            </div>
+          <div className="max-w-5xl mx-auto">
+             <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl">
+               <div 
+                 className="p-6 sm:p-8 cursor-pointer select-none flex items-start justify-between gap-4"
+                 onClick={() => setExpandedPortfolio(expandedPortfolio === 1 ? null : 1)}
+               >
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 font-bold text-xs rounded-full">
+                        ViewSonic
+                      </span>
+                    </div>
+                    <h4 className="text-xl sm:text-2xl font-bold text-gray-900">Global EdTech Rollout (ViewSonic Academy)</h4>
+                    <p className="text-sm sm:text-base text-gray-600 mt-1 font-medium">Visual proof of the global LMS platform deployment. Localized across 8+ regions and serving 2,000+ active users.</p>
+                  </div>
+                  <button
+                    className={`w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center transition-transform duration-300 flex-shrink-0 ${
+                      expandedPortfolio === 1 ? 'rotate-180 bg-slate-800 text-white' : 'text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+               </div>
+               
+               <div className={`transition-all duration-500 overflow-hidden ${expandedPortfolio === 1 ? 'max-h-[3000px] opacity-100 border-t border-gray-100' : 'max-h-0 opacity-0'}`}>
+                 <div className="p-6 sm:p-8 bg-gray-50/50">
+                    <div className="grid md:grid-cols-2 gap-8 items-center">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-xl border-l-4 border-blue-400">
+                          As the EdTech Project Manager, I architected and deployed this global Learning Management System. The platform features localized content tracks for regions like India, Thailand, and the UK, integrated video modules, and a fully functional resource dashboard.
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">LearnWorlds LMS</span>
+                          <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">Cross-Regional GTM</span>
+                          <span className="px-3 py-1.5 bg-white text-blue-700 rounded-lg text-sm font-medium border border-blue-100 shadow-sm">Product Management</span>
+                        </div>
+                        <div>
+                          <a href="https://academy.viewsonic.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-sm hover:shadow-md">
+                            View Live Academy <span aria-hidden="true">&rarr;</span>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="col-span-2 overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
+                          <img src="/nizar-portfolio/viewsonic-hero.png" alt="ViewSonic Academy Landing Page" className="w-full h-auto object-cover hover:scale-105 transition duration-500" />
+                        </div>
+                        <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
+                          <img src="/nizar-portfolio/viewsonic-catalog.png" alt="ViewSonic Academy Course Catalog showing localized regions" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
+                        </div>
+                        <div className="overflow-hidden rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white flex items-center justify-center">
+                          <img src="/nizar-portfolio/viewsonic-resources.png" alt="ViewSonic Academy Video Resources" className="w-full object-cover hover:scale-105 transition duration-500" style={{ maxHeight: "200px", objectPosition: "top" }} />
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+               </div>
+             </div>
           </div>
         </div>
       </section>
